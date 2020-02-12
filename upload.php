@@ -47,7 +47,7 @@ if(isset($_POST["submit"]))
 	   $_SESSION['wordcount'] = $wc;
 	   echo "<p><br></p><a href='download.php?file=$actual_filename'>Download file</a>";
 	   echo "<p><br></p><a href='welcome.php'>HOME </a>";
-	   $mysqli = new mysqli("localhost", "root", "anubhav", "loginsystem");
+	   $mysqli = new mysqli("localhost", "c_user", "p_user", "users");
            if($mysqli->connect_error) {
                exit('Error connecting to database'); //Should be a message a typical user could understand in production
            }
