@@ -8,8 +8,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 ?>
 <html>
-<div align="center">
-	<p><a href="logout.php">Logout here</a>.</p>
+<div>
+	<p align="right"; style="color:red;"><a href="logout.php">Logout here</a>.</p>
 	<h4> Logged in user :  <?php echo $_SESSION["username"]; ?> </h4>
 	<h5> Welcome <?php echo $_SESSION["firstname"]; ?> </h5>
 	<h5> Lastname : <?php echo $_SESSION["lastname"]; ?></h5>
@@ -26,8 +26,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     		<input type="submit" value="Upload File" name="submit">
 	</form>
 	<?php endif; ?>
-	
 </div>
-
 </html>
 
