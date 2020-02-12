@@ -12,12 +12,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	</head>
 <div>
-	<div class="form-group">
-        <form action="logout.php">
-            <input align="right" type="submit" class="btn btn-primary" value="Logout">
-        </form>
-        </div>
-	<p align="right"; style="color:red;"><a href="logout.php">Logout here</a>.</p>
+
 	<h4> Logged in user :  <?php echo $_SESSION["username"]; ?> </h4>
 	<h5> Welcome <?php echo $_SESSION["firstname"]; ?> </h5>
 	<h5> Lastname : <?php echo $_SESSION["lastname"]; ?></h5>
@@ -34,6 +29,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     		<input type="submit" value="Upload File" name="submit">
 	</form>
 	<?php endif; ?>
+	<div class="form-group">
+        <form action="logout.php">
+            <input align="right" type="submit" class="btn btn-primary" value="Logout">
+        </form>
+        </div>
 </div>
 </html>
 
