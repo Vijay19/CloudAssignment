@@ -26,7 +26,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	<form action="upload.php" method="post" enctype="multipart/form-data">
    	 	Select file to upload:
     		<input type="file" name="fileToUpload" id="fileToUpload">
-    		<input type="submit" class="btn btn-primary" value="Upload File" name="submit">
+    		<input type="submit" value="Upload File" name="submit">
 	</form>
 	<?php endif; ?>
 	<div class="form-group">
