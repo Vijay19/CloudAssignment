@@ -70,7 +70,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["firstname"] = $firstname; 
                             $_SESSION["lastname"] = $lastname;                             
                             $_SESSION["filename"] = $filename;
-			    $_SESSION["wordcount"] = $wordcount; 
+			    $_SESSION["wordcount"] = $wordcount;
+			    if($filename)
+			    {
+				$_SESSION["fileupload"] = "File is already uploaded";    
+			    }
                             // Redirect user to welcome page
                             header("location: welcome.php");
                         } else{
