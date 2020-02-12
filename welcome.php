@@ -14,7 +14,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	<h5> Welcome <?php echo $_SESSION["firstname"]; ?> </h5>
 	<h5> Lastname : <?php echo $_SESSION["lastname"]; ?></h5>
 	<h5> Email : <?php echo $_SESSION["email"]; ?></h5>
-	<h5> Filename : <?php echo $_SESSION["filename"]; ?></h5> 
+	<h5> Filename : <?php echo $_SESSION["filename"]; ?></h5>
+	<h5> Status : <?php echo $_SESSION["fileupload"]; ?></h5>
         <p></p><a href='download.php?file=<?php echo $_SESSION["filename"]; ?>'> Download file </a>
 	<h5> WordCount : <?php echo $_SESSION["wordcount"]; ?></h5>
 	<form action="upload.php" method="post" enctype="multipart/form-data">
