@@ -9,6 +9,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 ?>
 <html>
 <div>
+	<div class="form-group">
+        <form action="logout.php">
+            <input align="right" type="submit" class="btn btn-primary" value="Logout">
+        </form>
+        </div>
 	<p align="right"; style="color:red;"><a href="logout.php">Logout here</a>.</p>
 	<h4> Logged in user :  <?php echo $_SESSION["username"]; ?> </h4>
 	<h5> Welcome <?php echo $_SESSION["firstname"]; ?> </h5>
