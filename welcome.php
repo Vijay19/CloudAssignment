@@ -9,9 +9,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 ?>
 <html>
 	<head>
-	<style>
 	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-	</style>
 	</head>
 <div>
 	<div class="form-group">
