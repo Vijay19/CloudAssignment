@@ -57,6 +57,9 @@ if(isset($_POST["submit"]))
            $stmt->bind_param("sss", $actual_filename, $wc, $uname);
            $stmt->execute();
            $stmt->close();
+	   $_SESSION['fileupload'] = "File Upload Success";
+	   header("Location: welcome.php");
+	   exit();
         }
 	else
 	{
